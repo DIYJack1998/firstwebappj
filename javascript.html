@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        
+        <title>Javascript</title>
+        
+        <style>
+            
+            body {
+                 
+                 background-color: #CADAE4;
+                 
+            }
+            
+            #guess {
+                
+                width: 150px;
+                height: 25px;
+                border-radius: 10px;
+                background-color: lightgray;
+                
+            }
+            
+            #test {
+                
+                width: 150px;
+                height: 25px;
+                border-radius: 10px;
+                background-color: lightgray;
+                
+            }
+            
+            #test:hover {
+                
+                background-color: green;
+            }
+        
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <p>Whats the magic word?</p>
+        
+        <p><input type="text" id="guess" placeholder="Guess"></p>
+        
+        <p><button id="test">Test</button></p>
+        
+    
+        <script type="text/javascript">
+            
+            document.getElementById("test").onclick = function () {
+                
+                var word = "magic";
+                
+                var wordEntered = document.getElementById("guess").value;
+                
+                if (wordEntered == word) {
+                    
+                    alert("correct");
+                    
+                } else {
+                    
+                    alert("incorrect");
+                    
+                }
+               
+            }
+            }
+        </script>
+    
+    </body>
+
+</html>
